@@ -1,0 +1,5 @@
+{
+    "workbench.panel.defaultLocation": "right",
+    "python.formatting.provider": "black",
+    "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace"
+}

@@ -1,0 +1,26 @@
+A matrix giving the height of any point 
+as a real number is not guaranteed to actually 
+include the minimum or maximum point in the terrain,
+as it only includes the height at any coordinate (x,y)
+where x and y are natural numbers. Thus, to calculate any
+intermediate height, one would have to extrapolate, which
+comes with a certain uncertainty.
+In contrast, a function, f(x,y), with a restricted 
+domain (e.g. 10>x>0, 10>y>0) would include absolute minimum
+and maximum points in the terrain, and one would be able 
+to access the height at any intermediate point f(x,y) where 
+x and y are real numbers.
+This would allow for perfect, effecient calculations of minimum
+and maximums points, which is useful in a terrain of a larger
+scale.
+
+numpy.polyfit()
+
+Notes:
+
+Gradient Descent:
+- if starting point is on a a flat top, algorithm goes almost nowhere
+- NaN encountered
+    - Very small/large numbers?
+    - Weird coefficients?
+    - Potentially write custom differentiater
